@@ -1,24 +1,22 @@
-# Atmosphere License Template
-
-Copyright [YEAR] [COPYRIGHT HOLDER]
-Atmosphere License Version 0.1[OPTIONAL:–🌳🛂💸]
-
 The Atmosphere License is an open source software license with fossil fuel divestment provisions. It complies with the [Open Source Definition](https://opensource.org/osd) and the [Ethical Source Definition](https://ethicalsource.dev/definition/), and it's designed to impose quantifiable, enforceable obligations. Anyone, and any organization, can qualify to use and to convey programs under the Atmosphere License, and there are no limits on the content or functionality of the licensed programs.
 
 The Atmosphere License incorporates many provisions of the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), it optionally incorporates the concept of "deforestation" from the [Do No Harm License](https://github.com/raisely/NoHarm), and it also incorporates the [GNU Affero GPL's](https://www.gnu.org/licenses/agpl-3.0.md) concept of "Remote Network Interaction" as a trigger for license compliance. However, the Atmosphere License is not a version of any of those licenses.
 
 ## Preamble
 
-
 Software developers cannot ignore the impact of networked computation on the global climate crisis. The energy demands of the global economy far exceed the current production of renewable energy. While software development has the potential to make economic activity far more efficient, fossil fuel's high subsidies and disastrous social costs mean that improvements to software often give their users the ability to optimize for financial profit at the expense of the environment, by increasing their fossil fuel extraction and polluting activities. This dynamic has been worsened by the rise of cryptocurrency, which has made it possible to monetize computation roughly in proportion to the amount of energy consumed. Computation, energy, economics, and ecology are now locked in a harmful cycle. The purpose of the Atmosphere License is to let developers push back against this cycle, supporting environmental sustainabiliy by creating code that increases the relative economic value of renewable energy.
 
 Developers often release their software under open licenses out of a charitable impulse to help users accomplish their tasks more easily. The Atmosphere License acknowledges that if a contribution to open source helps its users to worsen the climate crisis and endanger the ecosystem that everyone depends on to survive, then the contribution is not effective altruism. The pursuit of open source software users' freedom must respect the physical safety of all stakeholders, including the users and the developers themselves.
 
-[OPTIONAL–🛂: Some opponents of environmental sustainability justify the rapid destruction of natural resources and human habitat as an opportunity to use the victims' status as displaced people or refugees as a pretense to drastically reduce the victims' human rights and freedom of movement. By trying to shift the burden of ecological collapse onto others, they seek to avoid the real challenge of stabilizing the climate. Because these two issues are linked, this version of the Atmosphere License also requires divestment from enterprises that target minority groups or refugees for imprisonment or violence.][OPTIONAL–💸: This version of the Atmosphere License also requires divestment from enterprises that operate for-profit prisons.]
+### OPTIONAL 🛂
+Some opponents of environmental sustainability justify the rapid destruction of natural resources and human habitat as an opportunity to use the victims' status as displaced people or refugees as a pretense to drastically reduce the victims' human rights and freedom of movement. By trying to shift the burden of ecological collapse onto others, they seek to avoid the real challenge of stabilizing the climate. Because these two issues are linked, this version of the Atmosphere License also requires divestment from enterprises that target minority groups or refugees for imprisonment or violence.
+
+### OPTIONAL 💸
+This version of the Atmosphere License also requires divestment from enterprises that operate for-profit prisons.
 
 The precise terms and conditions for copying, distribution and modification follow.
 
-### TERMS AND CONDITIONS
+# TERMS AND CONDITIONS
 
 ## 0. Scope
 This License applies to any program or other work which contains a notice placed by the copyright holder saying it may be distributed under the terms of this Atmosphere License. The "Program", below, refers to any such program or work, and a "work based on the Program" means either the Program or any derivative work under copyright law: that is to say, a work containing the Program or a portion of it, either verbatim or with modifications and/or translated into another language. (Hereinafter, translation is included without limitation in the term "modification".) Each licensee is addressed as "you".
@@ -33,10 +31,10 @@ You may charge a fee for the physical act of transferring a copy, and you may at
 ## 2. Modified Copies
 You may modify your copy or copies of the Program or any portion of it, thus forming a work based on the Program, and copy and distribute such modifications or work under the terms of Section 1 above, provided that each time you do so you also meet all of these conditions:
 
-a) You must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.
-b) You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
-c) If the modified program normally reads commands interactively when run, you must cause it, when started running for such interactive use in the most ordinary way, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty) and that users may redistribute the program under these conditions, and telling the user how to view a copy of this License. (Exception: if the Program itself is interactive but does not normally print such an announcement, your work based on the Program is not required to print an announcement.)
-d) You must divest from all Disqualifying Assets as listed in Section 3.
+1. You must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.
+2. You must cause any work that you distribute or publish, that in whole or in part contains or is derived from the Program or any part thereof, to be licensed as a whole at no charge to all third parties under the terms of this License.
+3. If the modified program normally reads commands interactively when run, you must cause it, when started running for such interactive use in the most ordinary way, to print or display an announcement including an appropriate copyright notice and a notice that there is no warranty (or else, saying that you provide a warranty) and that users may redistribute the program under these conditions, and telling the user how to view a copy of this License. (Exception: if the Program itself is interactive but does not normally print such an announcement, your work based on the Program is not required to print an announcement.)
+4. You must divest from all Disqualifying Assets as listed in Section 3.
 
 Notwithstanding any other provision of this License, when you modify the Program, you may allow users to interact with your modified version remotely through a computer network only if you have divested from all Disqualifying Assets as listed in Section 3, and your modified version of the Program must prominently offer all users interacting with it remotely through a computer network (if your version supports such interaction) an opportunity to receive the Corresponding Source of your version by providing access to the Corresponding Source from a network server at no charge, through some standard or customary means of facilitating copying of software.
 
@@ -54,30 +52,36 @@ In addition, mere aggregation of another work not based on the Program with the 
 A "Disqualifying Investment" is any investment exceeding $10,000 in value in a company, agency, or entity that operates any Disqualifying Facility or has a majority ownership interest or majority profit rights in any Disqualifying Facility. A Disqualifying Investment may take the form of direct ownership, shares, commingled mutual funds containing shares, or corporate bonds.
 
 "Disqualifying Facilities" include any of the following:
-    1. any coal mine or any coal extraction operations.
-    2. any oil or natural gas wells or extraction operations.
-    3. any coal, oil, or natural gas processing facility.
-    4. any pipeline longer than 10 kilometers used for fossil fuel transportation.
 
-[OPTIONAL 🌳: "Disqualifying Facilities" also include any of the following:
-    1. any deforestation operation.
-        a. "Deforestation" shall mean the clearing, burning, or destruction of 0.5 or more hectares of forests within a 1 year period for conversion to a non-forest use such as farming, ranching, or construction.
-        b. "Forest" shall mean 0.5 or more hectares of trees that were either planted more than 50 years ago or were not planted by humans or human made equipment.
-    2. any land that has been deforested within the past three years.
-        a. a "conservation easement or other effective legal restriction" on land that has been deforested only qualifies as "Divestment" if it effectively prohibits all non-forest use.]
+1. any coal mine or any coal extraction operations.
+2. any oil or natural gas wells or extraction operations.
+3. any coal, oil, or natural gas processing facility.
+4. any pipeline longer than 10 kilometers used for fossil fuel transportation.
 
-[OPTIONAL 🛂: "Disqualifying Facilities" also include any of the following:
-    1. any concentration camp or other facility for involuntary internment of civilians based on their status as refugees (including climate refugees), status as asylum claimants, race, ethnicity, religion, national origin, sexual orientation, gender, or gender identification.
-    2. any business, agency, or entity engaged in any of the five offenses defined by Article 3 of the United Nations Convention on the Prevention and Punishment of the Crime of Genocide.]
+### OPTIONAL 🌳: Deforestation
+"Disqualifying Facilities" also include any of the following:
 
-[OPTIONAL 💸: "Disqualifying Facilities" also include any prison or jail that is owned or operated for a profit.]
+1. any deforestation operation.
+    * "Deforestation" shall mean the clearing, burning, or destruction of 0.5 or more hectares of forests within a 1 year period for conversion to a non-forest use such as farming, ranching, or construction.
+    * "Forest" shall mean 0.5 or more hectares of trees that were either planted more than 50 years ago or were not planted by humans or human made equipment.
+2. any land that has been deforested within the past three years.
+    * a "conservation easement or other effective legal restriction" on land that has been deforested only qualifies as "Divestment" if it effectively prohibits all non-forest use.
+
+### OPTIONAL 🛂: Civilian Internment
+"Disqualifying Facilities" also include any of the following:
+
+1. any concentration camp or other facility for involuntary internment of civilians based on their status as refugees (including climate refugees), status as asylum claimants, race, ethnicity, religion, national origin, sexual orientation, gender, or gender identification.
+2. any business, agency, or entity engaged in any of the five offenses defined by Article 3 of the United Nations Convention on the Prevention and Punishment of the Crime of Genocide.
+
+### OPTIONAL 💸: For-Profit Prisons
+"Disqualifying Facilities" also include any prison or jail that is owned or operated for a profit.
 
 ## 4. Source Code
 You may copy and distribute the Program (or a work based on it, under Section 2) in object code or executable form under the terms of Sections 1 and 2 above provided that you also do one of the following:
 
-a) Accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
-b) Accompany it with a written offer, valid for at least three years, to give any third party, for a charge no more than your cost of physically performing source distribution, a complete machine-readable copy of the corresponding source code, to be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
-c) Accompany it with the information you received as to the offer to distribute corresponding source code. (This alternative is allowed only for noncommercial distribution and only if you received the program in object code or executable form with such an offer, in accord with Subsection b above.)
+1. Accompany it with the complete corresponding machine-readable source code, which must be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
+2. Accompany it with a written offer, valid for at least three years, to give any third party, for a charge no more than your cost of physically performing source distribution, a complete machine-readable copy of the corresponding source code, to be distributed under the terms of Sections 1 and 2 above on a medium customarily used for software interchange; or,
+3. Accompany it with the information you received as to the offer to distribute corresponding source code. (This alternative is allowed only for noncommercial distribution and only if you received the program in object code or executable form with such an offer, in accord with Subsection b above.)
 The source code for a work means the preferred form of the work for making modifications to it. For an executable work, complete source code means all the source code for all modules it contains, plus any associated interface definition files, plus the scripts used to control compilation and installation of the executable. However, as a special exception, the source code distributed need not include anything that is normally distributed (in either source or binary form) with the major components (compiler, kernel, and so on) of the operating system on which the executable runs, unless that component itself accompanies the executable.
 
 If distribution of executable or object code is made by offering access to copy from a designated place, then offering equivalent access to copy the source code from the same place counts as distribution of the source code, even though third parties are not compelled to copy the source along with the object code.
