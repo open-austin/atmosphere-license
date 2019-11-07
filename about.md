@@ -1,3 +1,6 @@
+---
+layout: layout.liquid
+---
 The Atmosphere License is an open source, copyleft software license with fossil fuel divestment provisions. It complies with the [Open Source Definition](https://opensource.org/osd) and the [Ethical Source Definition](https://ethicalsource.dev/definition/), and it's designed to impose quantifiable, enforceable obligations. Anyone, and any organization, can qualify to use and to convey programs under the Atmosphere License, and there are no limits on the content or functionality of the licensed programs.
 
 As of version 0.1, the Atmosphere License includes several optional provisions. The license is [available as a template](atmosphere-templates/atmosphere-0.1.md) that shows all the available options.
