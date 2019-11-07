@@ -1,5 +1,9 @@
 ---
 layout: layout.liquid
+clauses:
+- 🌳
+- 🛂
+- 💸
 ---
 <h1>License Selector</h1>
 <div id="intro">
@@ -27,18 +31,12 @@ layout: layout.liquid
         Licenses are not versions of any of those licenses.</p>
 </div>
 <div id="provision-toggle" class="bg-light border border-primary">
+    {% for clause in clauses %}
     <div class="form-check m-2">
-        <input type="checkbox" class="form-check-input" name="🌳" id="deforestation-option">
-        <label class="form-check-label" for="deforestation-option">Include Deforestation Provision 🌳</label>
+        <input type="checkbox" class="form-check-input" name="{{ clause }}" id="{{ clause }}-option">
+        <label class="form-check-label" for="{{ clause }}-option">Include Deforestation Provision {{ clause }}</label>
     </div>
-    <div class="form-check m-2">
-        <input type="checkbox" class="form-check-input" name="🛂" id="internment-option">
-        <label class="form-check-label" for="internment-option">Include Civilian Internment Provision 🛂</label>
-    </div>
-    <div class="form-check m-2">
-        <input type="checkbox" class="form-check-input" name="💸" id="prison-option">
-        <label class="form-check-label" for="prison-option">Include Private Prison Provision 💸</label>
-    </div>
+    {% endfor %}
 </div>
 <div class="m-3" id="license">
     <h2>Atmosphere Software License Version 0.1<span class="any-options">–</span><span class="🌳">🌳</span><span
