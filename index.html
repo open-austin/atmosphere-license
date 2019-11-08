@@ -7,8 +7,7 @@ clauses:
 ---
 <h1>License Selector</h1>
 <div id="intro">
-    <p>The Atmosphere Licenses are open source software license with fossil fuel divestment provisions. They comply with the <a href="https://opensource.org/osd">Open Source Definition</a> and the <a href="https://ethicalsource.dev/definition/">Ethical Source Definition</a>, and they're designed to impose quantifiable, enforceable obligations. Anyone, and any organization, can qualify to use, modify, and convey programs under the Atmosphere Licenses, and there are no limits on the content or functionality of the licensed programs. </p>
-    <p>The Atmosphere Licenses incorporate many provisions of the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU General Public License</a>, they optionally incorporate the concept of "deforestation" from the <a href="https://github.com/raisely/NoHarm">Do No Harm License</a>, and they also incorporate the <a href="https://www.gnu.org/licenses/agpl-3.0.md">GNU Affero GPL's</a> concept of "Remote Network Interaction" as a trigger for license compliance. However, the Atmosphere Licenses are not versions of any of those licenses.</p>
+    {% include licenseIntro %}
 </div>
 <div id="provision-toggle" class="bg-light border border-primary"> {% for clause in clauses %} {% for item in clause %} <div class="form-check m-2">
         <input type="checkbox" class="form-check-input" name="{{ item[0] }}" id="{{ item[1] }}-option">
