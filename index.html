@@ -1,9 +1,9 @@
 ---
 layout: layout.liquid
 clauses:
-- 🌳
-- 🛂
-- 💸
+- 🌳: Deforestation
+- 🛂: Civilian Internment
+- 💸: For-Profit Prisons
 ---
 <h1>License Selector</h1>
 <div id="intro">
@@ -32,15 +32,17 @@ clauses:
 </div>
 <div id="provision-toggle" class="bg-light border border-primary">
     {% for clause in clauses %}
+    {% for item in clause %}
     <div class="form-check m-2">
-        <input type="checkbox" class="form-check-input" name="{{ clause }}" id="{{ clause }}-option">
-        <label class="form-check-label" for="{{ clause }}-option">Include Deforestation Provision {{ clause }}</label>
+        <input type="checkbox" class="form-check-input" name="{{ item[0] }}" id="{{ item[1] }}-option">
+        <label class="form-check-label" for="{{ item[1] }}-option">Include {{ item[1] }} Provision
+            {{ item[0] }}</label>
     </div>
+    {% endfor %}
     {% endfor %}
 </div>
 <div class="m-3" id="license">
-    <h2>Atmosphere Software License Version 0.1<span class="any-options">–</span><span class="🌳">🌳</span><span
-            class="🛂">🛂</span><span class="💸">💸</span></h2>
+    <h2>{% include licenseName %}</h2>
     <div class="text-justify" id="license-text">
         <h3>Preamble</h3>
         <p>Software developers cannot ignore the impact of networked computation on the global climate crisis.
@@ -592,16 +594,14 @@ clauses:
     </div>
     <h3>END OF TERMS AND CONDITIONS</h3>
 </div>
-<h4>How to apply the Atmosphere License Version 0.1<span class="any-options">–</span><span class="🌳">🌳</span><span
-        class="🛂">🛂</span><span class="💸">💸</span> to your work</h4>
+<h4>How to apply the {% include licenseName %} to your work</h4>
 <p>Attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own
     identifying
     information. If you want to include any optional provisions in your license, include the emojis
     corresponding to
     those provisions at the end of your license version number.</p>
 <p>Copyright [YEAR] [COPYRIGHT HOLDER]
-    Atmosphere Software License Version 0.1<span class="any-options">–</span><span class="🌳">🌳</span><span
-        class="🛂">🛂</span><span class="💸">💸</span></p>
+    {% include licenseName %}</p>
 <p>If your program has an interactive mode, you should have it provide the name and version number of the
     Atmosphere
     License when it starts up, and provide a link to where the full license can be found.</p>
