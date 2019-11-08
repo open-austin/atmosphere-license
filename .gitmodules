@@ -1,0 +1,4 @@
+[submodule "_site"]
+	path = _site
+	url = https://github.com/open-austin/atmosphere-license.git
+	branch = gh-pages
