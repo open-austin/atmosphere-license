@@ -10,3 +10,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("favicon.ico");
 };
+
+module.exports = {
+    pathPrefix: "/atmosphere-license/"
+};
