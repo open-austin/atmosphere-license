@@ -19,6 +19,10 @@ Much of the recent discussion about misuse of open source software [has revolved
 
 ## Questions about the Atmosphere Licenses
 
+### Where is a static document containing all the text of the Atmosphere Licenses for offline use?
+
+[Here.]({{ '/atmosphere-static-0.1/index.html' | url}})
+
 ### What is the relationship between the Atmosphere Licenses and the GNU General Public License (GPL)?
 
 The Atmosphere Licenses incorporate many provisions of the [GNU General Public License]("https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), and they also incorporate the [GNU Affero GPL's]("https://www.gnu.org/licenses/agpl-3.0.md") concept of "Remote Network Interaction" as a trigger for license compliance. This reuse is [authorized by the Free Software Foundation](https://www.gnu.org/licenses/gpl-faq.html#ModifyGPL). The Atmosphere Licenses also optionally incorporate the concept of "deforestation" from the [Do No Harm License]("https://github.com/raisely/NoHarm). However, the Atmosphere Licenses are not versions of any of those licenses. The Atmosphere Licenses and the GNU Licenses are mutually incompatible, so you can't incorporate GNU code into Atmosphere projects, and vice versa.

@@ -21,20 +21,11 @@ clauses:
         {% endfor %}
     </div>
     <noscript>
-        <div id="alt-instructions" class="m-2">
-            <h4>Selecting Opinion Provisions</h4>
-            <p>You can modify the Atmosphere License by adding one or more optional provisions to impose additional divestment obligations on licensees. These optional provisions are identified by emojis: 🌳 for Deforestation, 🛂 for Civilian Internment, and 💸 for For-Profit Prisons. To include an optional provision in your license, copy/paste the license into your own document and then remove the term " OPTIONAL:" and remove the double brackets ("[[" and "]]" ) from the beginning and end of each paragraph marked with the corresponding emoji.</p>
-            <p>For any optional provisions that you don't want to include in your license, please delete the optional paragraphs containing those provisions.</p>
-            <p>When you cite the name of the license you're using, include the emojis for the provisions you decided to include. For instance, if you selected the Deforestation and For-Profit Prisons provisions, the name of your license would be "{{ baseName }} Version {{ versionNumber }}–🌳💸"</p>
-        </div>
+        {% include licenseEndInstructions %}
     </noscript>
 </div>
 <div class="m-3" id="license">
-    <h2>{% include licenseName %}</h2>
-    <div class="text-justify" id="license-text"> {% include license-versions/atmosphere-0.1.html %} </div>
+    <div class="text-justify" id="license-text"> {% include license-versions/atmosphere-0.1.html %}
+    </div>
 </div>
-<h4>How to apply the {% include licenseName %} to your work</h4>
-<p>Attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own identifying information. If you want to include any optional provisions in your license, include the emojis corresponding to those provisions at the end of your license version number.</p>
-<p>Copyright [YEAR] [COPYRIGHT HOLDER] {% include licenseName %}</p>
-<p>If your program has an interactive mode, you should have it provide the name and version number of the Atmosphere License when it starts up, and provide a link to where the full license can be found.</p>
-<p>If you're including any optional provisions, make sure they appear at the end of Section 3 ("Divestment"). If you're working from a template, be sure that you've removed the brackets from around the provisions you want to use and removed the word "OPTIONAL" before them, both in the version number and in the license text. Be sure to delete any optional provisions you don't want to use. If you make a mistake that causes the license to be ambiguous, an optional provision is considered to be included in your license if and only if its text appears in the license without the word "OPTIONAL".</p>
+{% include licenseEndInstructions %}

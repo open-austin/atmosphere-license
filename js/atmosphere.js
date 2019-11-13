@@ -38,12 +38,7 @@ const toggleProvisionsOnClick = function (e) {
     toggleProvisions(e.target)
 }
 
-// Replace non-Javascript content
-
-document.getElementById("provision-toggle").hidden = false;
-
 // make checkboxes interactive
-
 let provisionCheckboxes = Array.from(document
     .getElementById('provision-toggle')
     .getElementsByTagName("input"));
@@ -54,3 +49,9 @@ provisionCheckboxes.forEach(function (element) {
     removeBracketsFromOptionalText(element)
 });
 provisionCheckboxes.forEach(toggleProvisions);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+    // Replace non-Javascript content
+    document.getElementById("provision-toggle").hidden = false;
+
+});
