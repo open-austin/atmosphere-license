@@ -1,5 +1,5 @@
 {{ baseName }} Version {{ versionNumber }}<span class="any-options" hidden>–</span>
 {%- for clause in clauses -%}
 {%- for item in clause -%}
-<span class="{{ item[0] }}">{{ item[0] }}</span>
+<span class="{{ item[0] }}" hidden>{{ item[0] }}</span>
 {%- endfor -%}{%- endfor -%}
