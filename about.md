@@ -63,7 +63,7 @@ No, there are no other known licenses that comply with all the same obligations 
 
 Yes. Releasing your own work under the Atmosphere License doesn't limit your rights to release it under any different licenses, including closed-source licenses, incompatible open source licenses, etc.
 
-### Is Atmosphere-licensed code compatible to upload to the Python Package Index (PyPI)?
+### Is Atmosphere-licensed code compatible with the terms of use for uploading packages to the Python Package Index (PyPI)?
 
 Yes. PyPI packages must have a license, but those licenses [don't need to grant any rights to derivative works](https://pypi.org/policy/terms-of-use/). Because the Atmosphere Licenses only limit rights to derivative works, they grant more than the minimum rights required for the PyPI.
 
