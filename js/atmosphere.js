@@ -23,15 +23,34 @@ const toggleProvisions = function (target) {
     toggleDash()
 };
 
+// Remove brackets that are only used for the noninteractive
+// version of the license
+
+const removeBracketsFromOptionalText = function (target) {
+    clauses = Array.from(document.getElementsByClassName(target.name))
+    clauses.forEach(function (element) {
+        element.innerHTML = element.innerHTML.replace("[[OPTIONAL: ", "").replace("]]", "")
+    });
+};
+
 
 const toggleProvisionsOnClick = function (e) {
     toggleProvisions(e.target)
 }
+
+// Replace non-Javascript content
+
+document.getElementById("provision-toggle").hidden = false;
+
+// make checkboxes interactive
 
 let provisionCheckboxes = Array.from(document
     .getElementById('provision-toggle')
     .getElementsByTagName("input"));
 provisionCheckboxes.forEach(function (element) {
     element.addEventListener('click', toggleProvisionsOnClick)
+});
+provisionCheckboxes.forEach(function (element) {
+    removeBracketsFromOptionalText(element)
 });
 provisionCheckboxes.forEach(toggleProvisions);
