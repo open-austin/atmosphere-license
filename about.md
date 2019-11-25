@@ -73,7 +73,7 @@ Yes. PyPI packages must have a license, but those licenses [don't need to grant 
 
 ### Why is there also a CC0 license in the Atmosphere License repository?
 
-The Atmosphere License itself is released under a CC0 License. That means you don't need to qualify to be a licensee of Atmosphere Licensed software to release your own software under the Atmosphere License, or even to create new variations on the Atmosphere License. In other words, you don't have to divest from fossil fuels before releasing your own software under the Atmosphere License. However, if someone else modifies your software and licenses the modifications back to you under the Atmosphere License, your use of that modified software will be governed by the Atmosphere License, not the CC0 License.
+The Atmosphere License itself is released under a CC0 License. That means you don't need to qualify to be a licensee of Atmosphere Licensed software to release your own software under the Atmosphere License, or even to create new variations on the Atmosphere License. In other words, you don't have to divest from fossil fuels before releasing your own software under the Atmosphere License. However, if someone else modifies your software and licenses the modifications back to you under an Atmosphere License, your use of that modified software will be governed by the Atmosphere License, not the CC0 License.
 
 ### Can I reuse parts of the Atmosphere Licenses to create a different license?
 
