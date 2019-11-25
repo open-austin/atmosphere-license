@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("favicon.ico");
 
     return {
