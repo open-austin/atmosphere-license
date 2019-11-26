@@ -21,7 +21,7 @@ Much of the recent discussion about misuse of open source software [has revolved
 
 ### Where is a static document containing all the text of the Atmosphere Licenses for offline use?
 
-[Here.]({{ '/atmosphere-static-0.1/index.html' | url}})
+[Here.]({{ '/atmosphere-static-0.2/index.html' | url}})
 
 ### What is the relationship between the Atmosphere Licenses and the GNU General Public License (GPL)?
 
@@ -45,7 +45,7 @@ An "any later version" clause is only effective when a license is supported by a
 
 ### Is the Atmosphere License ready to be used to license important software?
 
-The Atmosphere License is new in version 0.1, so it might be best to use it in simpler licensing scenarios until the license has been reviewed for flaws and possibly revised. Such a simple scenario might be where code is the product of just one contributor, or only a few contributors who share the same values and are able to communicate with each other easily. If the contributors can coordinate with each other easily, that means they can easily relicense their work when a new version of the Atmosphere License is released. But if many different contributors license different parts of a single program to each other under the Atmosphere License, that would mean it would be necessary to contact every single contributor and get their permission before relicensing the program under a new version of the Atmosphere License or under a different license.
+The Atmosphere License is new, so it might be best to use it in simpler licensing scenarios until the license has been reviewed for flaws and possibly revised. Such a simple scenario might be where code is the product of just one contributor, or only a few contributors who share the same values and are able to communicate with each other easily. If the contributors can coordinate with each other easily, that means they can easily relicense their work when a new version of the Atmosphere License is released. But if many different contributors license different parts of a single program to each other under the Atmosphere License, that would mean it would be necessary to contact every single contributor and get their permission before relicensing the program under a new version of the Atmosphere License or under a different license.
 
 ### I want to use code under a different license in an Atmosphere licensed project. Which licenses are compatible?
 
