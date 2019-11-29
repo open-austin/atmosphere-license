@@ -68,11 +68,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 const markdownBox = document.getElementById("license-markdown-box")
 
 const updateMarkdownLicense = async function (target) {
-    var turndownService = await new TurndownService().remove(function (node, options) {
+    var turndownService = await new TurndownService().addRule('hidden-nodes', {
+        filter: function (node, options) {
         return (
         node.hidden
         )
+    },
+        replacement: function (content) {
+        return ''
+        }
     })
+
     let markdown = await turndownService.turndown(document.getElementById('license'));
     markdownBox.innerHTML = markdown;
 }
