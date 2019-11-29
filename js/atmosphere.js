@@ -64,3 +64,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("provision-toggle").hidden = false;
     initCheckboxes();
 });
+
+const markdownBox = document.getElementById("license-markdown-box")
+
+const updateMarkdownLicense = async function (target) {
+    var turndownService = await new TurndownService().addRule('hidden-nodes', {
+        filter: function (node, options) {
+        return (
+        node.hidden
+        )
+    },
+        replacement: function (content) {
+        return ''
+        }
+    })
+
+    let markdown = await turndownService.turndown(document.getElementById('license'));
+    markdownBox.innerHTML = markdown;
+}
+
+licenseButton = document.getElementById("license-markdown-button")
+licenseButton.addEventListener('click', updateMarkdownLicense);
+
+
+
