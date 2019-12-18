@@ -21,7 +21,7 @@ Much of the recent discussion about misuse of open source software [has revolved
 
 ### Where is a static document containing all the text of the Atmosphere Licenses for offline use?
 
-[Here.]({{ '/atmosphere-static-0.2/index.html' | url}})
+[Here.]({{ '/atmosphere-static-0.3/index.html' | url}})
 
 ### What is the relationship between the Atmosphere Licenses and the GNU General Public License (GPL)?
 
