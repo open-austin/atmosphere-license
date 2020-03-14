@@ -1,6 +1,7 @@
 ---
 layout: layout.liquid
 ---
+
 # About the Atmosphere Licenses
 
 {% include licenseIntro %}
@@ -18,6 +19,12 @@ The concept of the Atmosphere licenses was inspired by [the Hippocratic License]
 Much of the recent discussion about misuse of open source software [has revolved around](https://www.zdnet.com/article/developer-takes-down-ruby-library-after-he-finds-out-ice-was-using-it/) US Immigrations and Customs Enforcement's (ICE) family separation and internment camp policies, as well as related surveillance infrastructure. That's an issue that people might reasonably want to try to address with restrictions on relicensing, and it's certainly related to the climate crisis. But there's also a risk of adding too many provisions to the Atmosphere License and making it too hard to understand. As a compromise, provisions relating to civilian internment are available to add as an optional section by checking the corresponding box on the [License Selector]({{ '/' | url }}) page.
 
 ## Questions about the Atmosphere Licenses
+
+### How do I apply an Atmosphere License to my own open source repository?
+
+First, go to the [License Selector]({{ '/' | url }}) page and choose a version of the license by clicking the checkboxes for the optional provisions you want (if any). The correct text should appear in the license when you click the checkboxes. Then, scroll down to the bottom of the page and click the button marked "Get License in Markdown". When you do that, the text box next to the button should populate with a copy of your license in Markdown format. Copy the text from the text box into a new file with a name like "license.md". Put that file in the repository for your open source project, alongside the readme file.
+
+To identify yourself (or another person or business) as the copyright holder and as the person granting rights under the license, you should add a boilerplate notice in the format "Copyright (YEAR) (NAME OF COPYRIGHT HOLDER) (LICENSE NAME)". The license name you use should be the full license name, including the version number and any emojis representing optional provisions. This notice could go at the top of the license file, in the readme file, or in the text that appears when you start your program's interactive mode, if it has one.
 
 ### Where is a static document containing all the text of the Atmosphere Licenses for offline use?
 
@@ -41,7 +48,7 @@ If the software runs over the network in its unmodified form, then you can run t
 
 ### Why is there no provision for relicensing under "any later version" of the Atmosphere License?
 
-An "any later version" clause is only effective when a license is supported by a trusted organization with a clear vision for the future of the license. The Atmosphere License is in such an early stage that it could take a very different direction in the future. It wouldn't be fair to automatically subject licensors to unpredictable future changes to the license.
+An "any later version" clause is only useful when a license is supported by a trusted organization with a clear vision for the future of the license. The Atmosphere License is in such an early stage that it could take a very different direction in the future. It wouldn't be fair to automatically subject licensors to unpredictable future changes to the license.
 
 ### Is the Atmosphere License ready to be used to license important software?
 
@@ -49,7 +56,7 @@ The Atmosphere License is new, so it might be best to use it in simpler licensin
 
 ### I want to use code under a different license in an Atmosphere licensed project. Which licenses are compatible?
 
-Code licensed under permissive open source licenses, such as the MIT License, the BSD licenses other than the original 4-clause BSD license, and the X11 License, is compatible to be included in an Atmosphere licensed project.
+Code licensed under permissive open source licenses, such as the MIT License, the BSD licenses other than the original 4-clause BSD license, and the X11 License, is compatible to be included in an Atmosphere licensed project. You generally will need to include additional notices stating that your project contains code subject to the other licenses.
 
 Code subject to a public domain dedication, such as Creative Commons 0 (CC0), or the Unlicense, is also compatible to be included.
 
@@ -57,7 +64,7 @@ Code licensed under the Apache License version 2.0 is compatible to be included 
 
 Code is incompatible if it is licensed under other copyleft licenses like the [GNU GPL](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) or the [GNU Affero GPL](https://www.gnu.org/licenses/agpl-3.0.md).
 
-The [Do No Harm License](https://github.com/raisely/NoHarm) and the [Hippocratic License](https://firstdonoharm.dev/) are other [Ethical Source](https://ethicalsource.dev/definition/) licenses, but they're incompatible with the Atmosphere License.
+The [Hippocratic License](https://firstdonoharm.dev/) and the [Do No Harm License](https://github.com/raisely/NoHarm) are other [Ethical Source](https://ethicalsource.dev/definition/) licenses, but they're incompatible with the Atmosphere Licenses.
 
 ### I want to use code under an Atmosphere license in a project under a different license. Does the Atmosphere license authorize relicensing under any other license?
 
