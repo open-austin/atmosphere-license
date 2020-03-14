@@ -34,8 +34,8 @@
         </div>
     </nav>
 
-<div class="container p-4">
-    <h1>About the Atmosphere Licenses</h1>
+    <div class="container p-4">
+        <h1>About the Atmosphere Licenses</h1>
 <p>
 The Atmosphere Licenses are open source, copyleft software licenses with fossil fuel divestment provisions. They comply with the <a href="https://opensource.org/osd">Open Source Definition</a> and the <a href="https://ethicalsource.dev/definition/">Ethical Source Definition</a>, and they're designed to impose quantifiable, enforceable obligations. Anyone, and any organization, can qualify to use and to convey programs under the Atmosphere Licenses, and there are no limits on the content or functionality of the licensed programs.
 </p>
@@ -46,6 +46,9 @@ The Atmosphere Licenses are open source, copyleft software licenses with fossil 
 <p>The concept of the Atmosphere licenses was inspired by <a href="https://firstdonoharm.dev/">the Hippocratic License</a> and the new <a href="https://ethicalsource.dev/definition/">Ethical Source Definition</a>, both by <a href="http://where.coraline.codes/">Coraline Ada Ehmke</a>. However, the conversation around Ethical Source software has mostly assumed it isn't possible for a single license to meet both the Open Source Definition and the Ethical Source Definition. The Hippocratic License doesn't comply with part 6 of the <a href="https://opensource.org/osd">Open Source Definition</a> (&quot;No Discrimination Against Fields of Endeavor&quot;) because it prohibits use of the licensed software to violate the United Nations Universal Declaration of Human Rights. The Atmosphere Licenses avoid that issue because, instead of putting restrictions on use of the software, Atmosphere Licenses put preconditions on relicensing of the software. Preconditions on relicensing have been accepted in open source licensing for a long time, and they aren't prohibited by the Open Source Definition.</p>
 <p>Much of the recent discussion about misuse of open source software <a href="https://www.zdnet.com/article/developer-takes-down-ruby-library-after-he-finds-out-ice-was-using-it/">has revolved around</a> US Immigrations and Customs Enforcement's (ICE) family separation and internment camp policies, as well as related surveillance infrastructure. That's an issue that people might reasonably want to try to address with restrictions on relicensing, and it's certainly related to the climate crisis. But there's also a risk of adding too many provisions to the Atmosphere License and making it too hard to understand. As a compromise, provisions relating to civilian internment are available to add as an optional section by checking the corresponding box on the <a href="/atmosphere-license/">License Selector</a> page.</p>
 <h2>Questions about the Atmosphere Licenses</h2>
+<h3>How do I apply an Atmosphere License to my own open source repository?</h3>
+<p>First, go to the <a href="/atmosphere-license/">License Selector</a> page and choose a version of the license by clicking the checkboxes for the optional provisions you want (if any). The correct text should appear in the license when you click the checkboxes. Then, scroll down to the bottom of the page and click the button marked &quot;Get License in Markdown&quot;. When you do that, the text box next to the button should populate with a copy of your license in Markdown format. Copy the text from the text box into a new file with a name like &quot;license.md&quot;. Put that file in the repository for your open source project, alongside the readme file.</p>
+<p>To identify yourself (or another person or business) as the copyright holder and as the person granting rights under the license, you should add a boilerplate notice in the format &quot;Copyright (YEAR) (NAME OF COPYRIGHT HOLDER) (LICENSE NAME)&quot;. The license name you use should be the full license name, including the version number and any emojis representing optional provisions. This notice could go at the top of the license file, in the readme file, or in the text that appears when you start your program's interactive mode, if it has one.</p>
 <h3>Where is a static document containing all the text of the Atmosphere Licenses for offline use?</h3>
 <p><a href="/atmosphere-license/atmosphere-static/index.html">Here.</a></p>
 <h3>What is the relationship between the Atmosphere Licenses and the GNU General Public License (GPL)?</h3>
@@ -57,15 +60,15 @@ The Atmosphere Licenses are open source, copyleft software licenses with fossil 
 <h3>Do I have to need to divest from fossil fuels before running software under an Atmosphere License as a service for other people to use over a network?</h3>
 <p>If the software runs over the network in its unmodified form, then you can run the verbatim copy and serve it over a network without satisfying the divestment provisions. However, if you need to make any modifications of your own to the software to let users access it over the network, you would have to satisfy the divestment provisions to do so.</p>
 <h3>Why is there no provision for relicensing under &quot;any later version&quot; of the Atmosphere License?</h3>
-<p>An &quot;any later version&quot; clause is only effective when a license is supported by a trusted organization with a clear vision for the future of the license. The Atmosphere License is in such an early stage that it could take a very different direction in the future. It wouldn't be fair to automatically subject licensors to unpredictable future changes to the license.</p>
+<p>An &quot;any later version&quot; clause is only useful when a license is supported by a trusted organization with a clear vision for the future of the license. The Atmosphere License is in such an early stage that it could take a very different direction in the future. It wouldn't be fair to automatically subject licensors to unpredictable future changes to the license.</p>
 <h3>Is the Atmosphere License ready to be used to license important software?</h3>
 <p>The Atmosphere License is new, so it might be best to use it in simpler licensing scenarios until the license has been reviewed for flaws and possibly revised. Such a simple scenario might be where code is the product of just one contributor, or only a few contributors who share the same values and are able to communicate with each other easily. If the contributors can coordinate with each other easily, that means they can easily relicense their work when a new version of the Atmosphere License is released. But if many different contributors license different parts of a single program to each other under the Atmosphere License, that would mean it would be necessary to contact every single contributor and get their permission before relicensing the program under a new version of the Atmosphere License or under a different license.</p>
 <h3>I want to use code under a different license in an Atmosphere licensed project. Which licenses are compatible?</h3>
-<p>Code licensed under permissive open source licenses, such as the MIT License, the BSD licenses other than the original 4-clause BSD license, and the X11 License, is compatible to be included in an Atmosphere licensed project.</p>
+<p>Code licensed under permissive open source licenses, such as the MIT License, the BSD licenses other than the original 4-clause BSD license, and the X11 License, is compatible to be included in an Atmosphere licensed project. You generally will need to include additional notices stating that your project contains code subject to the other licenses.</p>
 <p>Code subject to a public domain dedication, such as Creative Commons 0 (CC0), or the Unlicense, is also compatible to be included.</p>
 <p>Code licensed under the Apache License version 2.0 is compatible to be included only if you add an additional phrase &quot;subject to restrictions in Apache License Version 2.0&quot; to the copyright notice. See section 7 (&quot;Additional Terms&quot;) in the Atmosphere License.</p>
 <p>Code is incompatible if it is licensed under other copyleft licenses like the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GNU GPL</a> or the <a href="https://www.gnu.org/licenses/agpl-3.0.md">GNU Affero GPL</a>.</p>
-<p>The <a href="https://github.com/raisely/NoHarm">Do No Harm License</a> and the <a href="https://firstdonoharm.dev/">Hippocratic License</a> are other <a href="https://ethicalsource.dev/definition/">Ethical Source</a> licenses, but they're incompatible with the Atmosphere License.</p>
+<p>The <a href="https://firstdonoharm.dev/">Hippocratic License</a> and the <a href="https://github.com/raisely/NoHarm">Do No Harm License</a> are other <a href="https://ethicalsource.dev/definition/">Ethical Source</a> licenses, but they're incompatible with the Atmosphere Licenses.</p>
 <h3>I want to use code under an Atmosphere license in a project under a different license. Does the Atmosphere license authorize relicensing under any other license?</h3>
 <p>No, there are no other known licenses that comply with all the same obligations as the Atmosphere License (other than more restrictive versions of the Atmosphere License itself).</p>
 <h3>I want to &quot;dual license&quot; my code by making it available either under the Atmosphere License or under a different license. Is this allowed?</h3>
@@ -77,28 +80,31 @@ The Atmosphere Licenses are open source, copyleft software licenses with fossil 
 <h3>Can I reuse parts of the Atmosphere Licenses to create a different license?</h3>
 <p>Yes, under the CC0 License, you can do this. Although you are free to reuse any part of the Atmosphere License, there are <a href="https://www.gnu.org/licenses/gpl-faq.html#ModifyGPL">some limitations</a> on what you can do with the text that comes from the GNU General Public License (GPL). The CC0 License does not include permission for you to use trademarks such as the name &quot;Atmosphere License&quot;, so if you create a new license, please give it a different name.</p>
 
-</div>
-<footer class="footer bg-light">
-    <div class="container">
-    <div class="row">
-        <div class="col-2 p-2">
-            <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
-                <a rel="license"
-                    href="http://creativecommons.org/publicdomain/zero/1.0/">
-                <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
-                </a>
-            </p>
-        </div>
-        <div class="col">
-            <p>
-                To the extent possible under law, <a rel="dct:publisher" href="https://www.open-austin.org/"><span property="dct:title">Open Austin</span></a>
-                has waived all copyright and related or neighboring rights to <span property="dct:title">the Atmosphere Software Licenses</span>.
-                This work is published from: <span property="vcard:Country" datatype="dct:ISO3166" content="US" about="https://www.open-austin.org/">United States</span>.
-            </p>
-        </div>
     </div>
-    </div>
-</footer>
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 p-2">
+                    <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+                        <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+                            <img src="https://licensebuttons.net/p/zero/1.0/88x31.png" style="border-style: none;"
+                                alt="CC0" />
+                        </a>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        To the extent possible under law, <a rel="dct:publisher"
+                            href="https://www.open-austin.org/"><span property="dct:title">Open Austin</span></a>
+                        has waived all copyright and related or neighboring rights to <span property="dct:title">the
+                            Atmosphere Software Licenses</span>.
+                        This work is published from: <span property="vcard:Country" datatype="dct:ISO3166" content="US"
+                            about="https://www.open-austin.org/">United States</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
