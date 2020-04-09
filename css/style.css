@@ -1,3 +1,11 @@
 li {
     list-style-type: none;
 }
+
+input[type=checkbox]:checked+label {
+    background: gold;
+}
+
+.gold {
+    background-color: gold;
+}

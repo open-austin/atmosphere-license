@@ -23,6 +23,9 @@ const toggleProvisions = async function (target) {
     clauses = await Array.from(document.getElementsByClassName(target.name))
     clauses.forEach(function (element) {
         element.hidden = isNotChecked(target)
+        if (element.tagName != "SPAN") {
+            element.classList.add("gold");
+        }
     });
     toggleDash()
 };
@@ -70,12 +73,12 @@ const markdownBox = document.getElementById("license-markdown-box")
 const updateMarkdownLicense = async function (target) {
     var turndownService = await new TurndownService().addRule('hidden-nodes', {
         filter: function (node, options) {
-        return (
-        node.hidden
-        )
-    },
+            return (
+                node.hidden
+            )
+        },
         replacement: function (content) {
-        return ''
+            return ''
         }
     })
 
@@ -85,6 +88,3 @@ const updateMarkdownLicense = async function (target) {
 
 licenseButton = document.getElementById("license-markdown-button")
 licenseButton.addEventListener('click', updateMarkdownLicense);
-
-
-
